@@ -1,1 +1,7 @@
+<mat-toolbar color="primary">
+  <span>ChatApp Null</span>
+  <span class="example-fill-remaining-space"></span>
+</mat-toolbar>
+<app-navbar *ngIf="isLoggedIn$| async"></app-navbar>
+<app-alert></app-alert>
 <router-outlet></router-outlet>

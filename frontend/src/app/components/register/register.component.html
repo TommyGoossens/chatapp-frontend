@@ -1,3 +1,77 @@
-<p>
-  register works!
-</p>
+<!--<div class="wrapper wrapper-full-page ">-->
+<div class="jumbotron d-flex justify-content-center">
+  <div class="container align-middle">
+    <div class="col-lg-6 offset-md-3">
+      <mat-card>
+        <mat-card-title>Please fill in your contact details.</mat-card-title>
+        <form [formGroup]="registerForm" (ngSubmit)="submitRegister()">
+          <table class="example-full-width" cellspacing="0">
+            <tr>
+              <td>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="First name" formControlName="firstname">
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Last name" formControlName="lastname">
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+          <p>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="E-mail address" formControlName="email">
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field class="example-full-width">
+              <input matInput #password maxlength="256" placeholder="Password" formControlName="password">
+              <mat-hint align="end">{{password.value.length}} / 256</mat-hint>
+            </mat-form-field>
+          </p>
+          <button mat-raised-button class="btn-primary text-center w-25" routerLink="/login">Cancel</button>
+          <button mat-raised-button class="btn-primary text-center float-right w-25" type="submit">Register</button>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+</div>
+<!--<div class="row">-->
+<!--<div class="col-lg-6">-->
+<!--<label for="firstname"></label><input type="text" #firstname class="form-control" placeholder="First"-->
+<!--autofocus>-->
+<!--</div>-->
+<!--<div class="col-lg-6">-->
+<!--<label for="lastname"></label><input type="text" #lastname class="form-control" placeholder="Last"-->
+<!--autofocus>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class="col-lg-12">-->
+<!--<label for="email"></label><input type="text" #email class="form-control" placeholder="Email" required-->
+<!--autofocus>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class="col-lg-12">-->
+<!--<label for="password"></label><input type="password" #password class="form-control" placeholder="Password"-->
+<!--required-->
+<!--autofocus>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class="col-lg-12">-->
+<!--<label for="dob"></label><input type="date" #dob class="form-control" placeholder="Date of birth"-->
+<!--autofocus>-->
+<!--</div>-->
+<!--</div>-->
+<!--<p></p>-->
+<!--<div class="row">-->
+<!--<div class="col-lg-6">-->
+<!--<button class="btn btn-lg btn-primary btn-block text-center" routerLink="/login">Cancel</button>-->
+<!--</div>-->
+<!--<div class="col-lg-6">-->
+<!--<button class="btn btn-lg btn-primary btn-block text-center" (click)="register(email.value,password.value)">Register!</button>-->
+<!--</div>-->
+<!--</div>-->
