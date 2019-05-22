@@ -6,8 +6,7 @@ import {catchError} from 'rxjs/operators';
 import {AuthService} from '../services/auth/auth.service';
 
 @Injectable()
-export class ErrorInterceptor {
-  //imoplements httpinterceptor
+export class ErrorInterceptor implements HttpInterceptor {
   constructor(private authenticationService: AuthService) {
   }
 
@@ -15,12 +14,13 @@ export class ErrorInterceptor {
     return next.handle(request).pipe(catchError(err => {
       if (err.status === 401) {
         // auto logout if 401 response returned from api
-        //   this.authenticationService.logout();
+        this.authenticationService.logout();
         location.reload(true);
       }
+      console.log('[ERROR FOUND] : ', err);
 
       const error = err.error.message || err.statusText;
-      return throwError(error);
+      return throwError(err);
     }));
   }
 }
