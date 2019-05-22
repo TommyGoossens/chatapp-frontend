@@ -4,6 +4,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
 import {AuthenticationParticipant} from '../../models/AuthenticationParticipant';
 import {AlertService} from '../../services/alert/alert.service';
+import {tap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +20,7 @@ export class LoginComponent implements OnInit {
               private route: ActivatedRoute,
               private router: Router,
               private alertService: AlertService) {
-    if (this.authService.currentUserValue) {
+    if (this.authService.loginSubject) {
       this.router.navigate(['/chat']);
     }
   }
@@ -50,13 +51,11 @@ export class LoginComponent implements OnInit {
     this.authService.signIn(authy)
       .subscribe(
         data => {
-          if (data != null && data.jwt) {
-            return this.router.navigate(['/chat']);
+          if (!data.error) {
+            this.router.navigate(['/chat']);
           } else {
-            this.alertService.error(data);
+            this.alertService.error(data.error.message);
           }
-        }, error => {
-          this.alertService.error(error);
         }
       )
     ;
