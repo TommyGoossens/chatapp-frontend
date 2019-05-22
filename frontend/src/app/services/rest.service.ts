@@ -5,12 +5,6 @@ import {map, catchError, tap} from 'rxjs/operators';
 
 const baseURL = 'http://localhost:22501/';
 
-const httpOptions = {
-  headers: new HttpHeaders({
-    'Content-Type': 'application/json',
-    // Authentication: localStorage.getItem('access_token')
-  })
-};
 
 @Injectable({
   providedIn: 'root'
@@ -21,11 +15,12 @@ export class RestService {
   }
 
   public get<T>(endpoint: string): Observable<any> {
+    console.log('[GETTING] : ', endpoint);
     return this.httpClient.get(baseURL + endpoint);
   }
 
   public post<T>(endpoint: string, payload: T): Observable<any> {
-    return this.httpClient.post<T>(baseURL + endpoint, payload, httpOptions)
+    return this.httpClient.post<T>(baseURL + endpoint, payload)
       .pipe(
         catchError((err: HttpErrorResponse) => {
           this.handleError('[POST]');
@@ -37,12 +32,8 @@ export class RestService {
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
 
-      // TODO: send the error to remote logging infrastructure
       console.error(error); // log to console instead
-
-      // TODO: better job of transforming error for user consumption
       console.log(`${operation} failed: ${error.message}`);
-
       // Let the app keep running by returning an empty result.
       return of(result as T);
     };
