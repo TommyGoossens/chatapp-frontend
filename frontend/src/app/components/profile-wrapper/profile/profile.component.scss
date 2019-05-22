@@ -1,0 +1,31 @@
+.container {
+  height: 100%;
+}
+
+.profile-container {
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 45%;
+}
+
+
+.profile-details-container {
+  height: 100%;
+  //margin-top: 15%;
+}
+
+.profile-status-container {
+  background: deepskyblue;
+  height: 45%;
+}
+
+.profile-picture-container {
+  padding: 5px;
+  height: 100%;
+  text-align: center;
+
+  img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
