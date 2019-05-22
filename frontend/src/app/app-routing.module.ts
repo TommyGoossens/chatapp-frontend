@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'chat', component: ChatWrapperComponent, canActivate: [AuthGuard]},
   {path: 'profile', component: ProfileWrapperComponent, canActivate: [AuthGuard]},
   {path: 'settings', component: SettingsComponent, canActivate: [AuthGuard]},
-  {path: '**', redirectTo: '/login'}];
+  {path: '**', redirectTo: ''}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
