@@ -29,6 +29,9 @@ import {ErrorInterceptor} from './interceptor/error.interceptor';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AlertComponent} from './components/alert/alert.component';
 import {ChatMessageComponent} from './components/chat-wrapper/chat/models/chat-message/chat-message.component';
+import {JwtInterceptor} from './interceptor/jwt.interceptor';
+import {JwtModule} from '@auth0/angular-jwt';
+import { ReplyMessageComponent } from './chat-wrapper/chat/models/reply-message/reply-message.component';
 
 // import { AuthguardComponent } from './guard/authguard/authguard.component';
 
@@ -46,7 +49,8 @@ import {ChatMessageComponent} from './components/chat-wrapper/chat/models/chat-m
     ProfileWrapperComponent,
     ChatWrapperComponent,
     AlertComponent,
-    ChatMessageComponent
+    ChatMessageComponent,
+    ReplyMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +77,8 @@ import {ChatMessageComponent} from './components/chat-wrapper/chat/models/chat-m
     MatTabsModule
   ],
   providers: [
-    {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true}
+    {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
+    {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true}
   ],
   bootstrap: [AppComponent]
 })

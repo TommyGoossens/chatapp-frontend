@@ -9,12 +9,12 @@ import {AuthService} from './services/auth/auth.service';
 })
 export class AppComponent implements OnInit {
   title = 'frontend';
-  isLoggedIn$: Observable<string>;
+  isLoggedIn: Observable<boolean>;
 
   constructor(private authService: AuthService) {
   }
 
   ngOnInit(): void {
-    this.isLoggedIn$ = this.authService.currentUserValue;
+    this.isLoggedIn = this.authService.loginSubject;
   }
 }
