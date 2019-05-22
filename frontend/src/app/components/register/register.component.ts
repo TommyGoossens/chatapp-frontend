@@ -20,9 +20,6 @@ export class RegisterComponent implements OnInit {
               private formBuilder: FormBuilder,
               private router: Router,
               private alertService: AlertService) {
-    if (this.authService.currentUserValue) {
-      this.router.navigate(['/chat']);
-    }
   }
 
   ngOnInit() {
@@ -45,6 +42,7 @@ export class RegisterComponent implements OnInit {
     registerParticipant.lastname = this.form.lastname.value;
     registerParticipant.password = this.form.password.value;
 
+    console.log(registerParticipant);
     this.authService.signUp(registerParticipant)
       .subscribe(
         res => {
