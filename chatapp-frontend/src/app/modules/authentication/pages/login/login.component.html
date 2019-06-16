@@ -1,0 +1,26 @@
+<div class="jumbotron d-flex justify-content-center">
+  <div class="container align-middle">
+    <div class="col-lg-6 offset-md-3">
+      <mat-card>
+        <mat-card-title>Sign in</mat-card-title>
+        <p>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="E-mail address" [(ngModel)]="authy.email"
+                   [ngModelOptions]="{standalone:true}">
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field class="example-full-width">
+            <input type="password" matInput maxlength="256" placeholder="Password" [(ngModel)]="authy.password"
+                   [ngModelOptions]="{standalone:true}">
+          </mat-form-field>
+
+        </p>
+        <button mat-raised-button class="btn-primary text-center float-right w-25" (click)="submitLogin()"
+                [disabled]="!allFieldsFilled()">Sign in
+        </button>
+        <button mat-raised-button class="btn-primary text-center w-25" routerLink="/auth/register">Register</button>
+      </mat-card>
+    </div>
+  </div>
+</div>

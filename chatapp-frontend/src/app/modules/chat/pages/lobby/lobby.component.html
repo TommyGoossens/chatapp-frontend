@@ -1,0 +1,31 @@
+<mat-list class="lobby-chats" *ngIf="chatSessions.length !== 0; else noChats">
+  <ng-container *ngFor="let chatSession of chatSessions">
+    <mat-list-item (click)="selectSession(chatSession)"
+                   [class.selected-session]="chatSession.chatroomIdentifier === selectedSession">
+      <img matListAvatar
+           src="{{chatSession | getImageURL}}"
+           alt="...">
+      <h3 matLine>
+        {{chatSession | getChatName}}
+      </h3>
+      <p matLine *ngIf="chatSession.lastMessage">
+        {{chatSession.lastMessage.content}}
+      </p>
+      <p matLine *ngIf="chatSession.lastMessage">
+        {{chatSession.lastMessage.formattedDate}}
+      </p>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+
+  </ng-container>
+
+
+</mat-list>
+<ng-template #noChats>
+  <mat-list-item>
+    <h3 matLine>No chats, start a new chat!</h3>
+  </mat-list-item>
+</ng-template>
+<a mat-fab id="fab" (click)="showNewChatDialog()">
+  <mat-icon>add</mat-icon>
+</a>

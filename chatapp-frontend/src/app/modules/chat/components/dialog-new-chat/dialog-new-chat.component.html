@@ -1,0 +1,41 @@
+<h1 mat-dialog-title>Start a new chat</h1>
+<mat-checkbox #groupChatCheckbox [(ngModel)]="chatRoom.groupChat" (click)="emptyParticipants()">Is it a group chat?
+</mat-checkbox>
+
+<div *ngIf="!groupChatCheckbox.checked; else groupChat">
+  <mat-form-field class="w-75">
+    <input matInput placeholder="email" [(ngModel)]="privateChatMail"/>
+  </mat-form-field>
+</div>
+
+<ng-template #groupChat>
+  <div>
+    <mat-form-field class="w-75">
+      <input matInput placeholder="Group name" [(ngModel)]="chatRoom.groupDescription"/>
+    </mat-form-field>
+    <mat-form-field class="w-75">
+      <input matInput placeholder="email" #groupMail/>
+    </mat-form-field>
+    <button mat-raised-button (click)="chatRoom.participants.push(groupMail.value)">add</button>
+  </div>
+  <cdk-virtual-scroll-viewport class="participant-list" itemSize="5"
+                               *ngIf="chatRoom.participants.length !== 0; else noPeople">
+    <ng-container *ngFor="let participant of chatRoom.participants">
+      <mat-list-item>
+        <h3 matLine>{{participant}}</h3>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </ng-container>
+  </cdk-virtual-scroll-viewport>
+
+  <ng-template #noPeople>
+    <mat-list-item>
+      <h3 matLine>Add some friends!</h3>
+    </mat-list-item>
+  </ng-template>
+</ng-template>
+
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]>No Thanks</button>
+  <button mat-button (click)="confirmChat()">Ok</button>
+</div>

@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Hi {{currentProfile.firstName}}</h1>
+<div mat-dialog-content>
+  <p>Please fill in the correct details!</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="newDetails.firstName"
+           placeholder="First name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="newDetails.lastName" placeholder="Last name">
+  </mat-form-field>
+  <mat-form-field>
+    <input type="date" matInput [(ngModel)]="newDetails.dateOfBirth" placeholder="dd-mm-yyyy">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="newDetails">Ok</button>
+</div>

@@ -1,0 +1,29 @@
+{
+  "extends": "../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "app",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "app",
+      "kebab-case"
+    ],
+    "no-console": {
+      "severity": "warning",
+      "options": [
+        "log",
+        "error",
+        "debug",
+        "info",
+        "time",
+        "timeEnd",
+        "trace"
+      ]
+    }
+  }
+}

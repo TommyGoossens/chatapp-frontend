@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+  <div *ngIf="currentChat" class="chat-header" (click)="showChatInformation()">
+    <i class="material-icons">info</i>
+    {{currentChat | getChatName}}
+  </div>
+</mat-toolbar>
+
+<div class="messages-container">
+  <ng-container *ngIf="messages">
+    <app-chat-message *ngFor="let message of messages" [message]="message" [chatRoom]="currentChat"
+                      (isReplying)="selectMessage($event)" class=""></app-chat-message>
+  </ng-container>
+</div>
+
+<div *ngIf="composedMessage.isReplyTo" class="selected-reply-message-container">
+  <i class="material-icons float-left" (click)="composedMessage.isReplyTo = null">
+    clear
+  </i>
+  <div>
+    {{composedMessage.isReplyTo.sender | getSender:currentChat.participants}} : {{composedMessage.isReplyTo.content}}
+  </div>
+</div>
+
+<div class="text-input-container">
+  <style>#file {
+    display: none;
+  }</style>
+  <label class="mdl-button mdl-js-button mdl-button--icon mdl-button--file">
+    <i class="material-icons">perm_media</i><input type="file" (change)="processMediaFile($event)" id="file">
+  </label>
+  <input #messageInput [(ngModel)]="composedMessage.content"/>
+  <button mat-raised-button class="btn-primary text-center float-right"
+          (click)="sendMessage(); messageInput.value = ''">send
+  </button>
+</div>

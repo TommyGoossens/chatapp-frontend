@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/chatapp-frontend
+    docker:
+      - image: circleci/node:8-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          key: AngularCircleCI-{{ .Branch }}-{{ checksum "package.json" }}
+      - run: npm install
+      - save_cache:
+          key: AngularCircleCI-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - "node_modules"
+      - run: xvfb-run -a npm run test -- --single-run --no-progress --browser=ChromeNoSandbox
+      - run: xvfb-run -a npm run e2e -- --no-progress --config=protractor-ci.conf.js
+
+#      - setup_remote_docker:
+#          docker_layer_caching: true
+#      - run:
+#          name: Build and push Docker image
+#          command: |
+#            echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin
+#            mvn clean compile com.google.cloud.tools:jib-maven-plugin:0.9.7:build -Dimage=tommygoossens/chatapp-eureka:release

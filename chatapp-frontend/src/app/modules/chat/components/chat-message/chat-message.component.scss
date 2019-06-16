@@ -1,0 +1,12 @@
+.chat-card {
+  max-width: 40%;
+  min-width: min-content;
+  height: auto;
+  margin: 10px 0;
+  //position: fixed;
+  right: 100% - width;
+
+  img {
+    max-height: 250px;
+  }
+}

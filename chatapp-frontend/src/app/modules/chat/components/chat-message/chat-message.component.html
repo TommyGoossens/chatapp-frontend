@@ -1,0 +1,18 @@
+<mat-card class="chat-card">
+  <div>
+    <i class="material-icons float-right" (click)="selectMessageToReply()">reply</i>
+  </div>
+  <div>
+    <mat-card-title [textContent]="message.sender | getSender:chatRoom.participants "></mat-card-title>
+  </div>
+
+  <mat-card *ngIf="message.isReplyTo">
+    <mat-card-title [textContent]="message.isReplyTo.sender | getSender:chatRoom.participants"></mat-card-title>
+    <mat-card-content>{{message.isReplyTo.content}}</mat-card-content>
+    <mat-card-footer [textContent]="message.isReplyTo.formattedDate"></mat-card-footer>
+  </mat-card>
+
+  <img *ngIf="message.mediaURL" src="{{message.mediaURL}}"/>
+  <mat-card-content [textContent]="message.content"></mat-card-content>
+  <mat-card-subtitle [textContent]="message.formattedDate"></mat-card-subtitle>
+</mat-card>

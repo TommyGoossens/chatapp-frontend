@@ -1,0 +1,41 @@
+.lobby-chats {
+  height: 100%;
+  padding: 0;
+
+  mat-list-item {
+    background: #ffffff;
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom: black;
+  }
+}
+
+.new-chat-search-field {
+  padding: 0 15px;
+  height: 8%;
+
+  mat-form-field {
+    width: 80%;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
+
+#fab {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+}
+
+.selected-session {
+  background-color: gainsboro !important;
+}
+
+
+

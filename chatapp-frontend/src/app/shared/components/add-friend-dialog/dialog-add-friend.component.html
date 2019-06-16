@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Find your friend!</h1>
+<div *ngIf="message">{{message}}</div>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput class="w-100" #emailInput placeholder="email" (input)="checkFriendMail(emailInput.value)"/>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="onSave(emailInput.value)" [disabled]="!friendIsAvailable">Ok</button>
+</div>

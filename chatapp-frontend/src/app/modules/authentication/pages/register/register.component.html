@@ -1,0 +1,45 @@
+<!--<div class="wrapper wrapper-full-page ">-->
+<div class="jumbotron d-flex justify-content-center">
+  <div class="container align-middle">
+    <div class="col-lg-6 offset-md-3">
+      <mat-card>
+        <mat-card-title>Please fill in your contact details.</mat-card-title>
+        <form>
+          <table class="example-full-width">
+            <tr>
+              <td>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="First name" [(ngModel)]="registerParticipant.firstname"
+                         [ngModelOptions]="{standalone:true}">
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Last name" [(ngModel)]="registerParticipant.lastname"
+                         [ngModelOptions]="{standalone:true}">
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+          <p>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="E-mail address" [(ngModel)]="registerParticipant.email"
+                     [ngModelOptions]="{standalone:true}">
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field class="example-full-width">
+              <input matInput #password maxlength="256" placeholder="Password"
+                     [(ngModel)]="registerParticipant.password" [ngModelOptions]="{standalone:true}">
+              <mat-hint align="end">{{password.value.length}} / 256</mat-hint>
+            </mat-form-field>
+          </p>
+          <button mat-raised-button class="btn-primary text-center w-25" routerLink="/auth/login">Cancel</button>
+          <button mat-raised-button class="btn-primary text-center float-right w-25" (click)="submitRegister()"
+                  [disabled]="!allFieldsFilled()">Register
+          </button>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+</div>

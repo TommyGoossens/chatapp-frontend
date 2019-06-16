@@ -1,0 +1,54 @@
+<h1 mat-dialog-title *ngIf="!currentChatRoom.groupChat; else groupDescription">{{currentChatRoom | getChatName}}</h1>
+<ng-template #groupDescription>
+  <h1 mat-dialog-title><input [(ngModel)]="newChatRoomDetails.groupName"/></h1>
+  <input matInput [(ngModel)]="newChatRoomDetails.groupDescription"/>
+</ng-template>
+<div mat-dialog-content class="chat-details">
+  <div class="container d-flex">
+    <div class="col-5">
+      <img src="{{currentChatRoom | getImageURL}}">
+    </div>
+
+    <div *ngIf="!currentChatRoom.groupChat && chatParticipant; else groupChat">
+      <h6>First name: {{chatParticipant.firstName}}</h6>
+      <h6>Last name: {{chatParticipant.lastName}}</h6>
+      <h6>Date of birth: {{chatParticipant.dateOfBirth}}</h6>
+    </div>
+
+    <ng-template #groupChat>
+      {{currentChatRoom.participants.length}} participants
+    </ng-template>
+
+  </div>
+
+
+  <div *ngIf="currentChatRoom.groupChat">
+    <div class="example-container mat-elevation-z8">
+      <table>
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Admin</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let participant of currentChatRoom.participants">
+          <td>{{participant.firstName + ' ' + participant.lastName}}</td>
+          <td>
+            <mat-checkbox [checked]='participant.email | adminStatus:currentChatRoom.admins'
+                          (click)="updateAdminStatus(participant.email)"></mat-checkbox>
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <button mat-raised-button *ngIf="getLoggedInUser() | adminStatus:currentChatRoom.admins"
+            (click)="showAddPersonDialog()">Add
+    </button>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button (click)="save()" class="float-right">Ok</button>
+  </div>
+</div>

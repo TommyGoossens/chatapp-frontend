@@ -1,0 +1,60 @@
+$profile-header-height: 8%;
+$text-input-height: 7%;
+$message-container-height: 100% - ($profile-header-height + $text-input-height);
+
+.profile-header {
+  height: $profile-header-height;
+  background: white;
+}
+
+.messages-container {
+  height: $message-container-height;
+  overflow: auto;
+  padding-left: 10px;
+  background: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-037.jpg") no-repeat;
+  background-size: cover;
+  //background-size: auto;
+  max-width: 100%;
+}
+
+.message {
+  position: fixed;
+  right: 30px;
+
+}
+
+.text-input-container {
+  padding: 10px 5px;
+  height: $text-input-height;
+  //padding: 5px;
+  width: 100%;
+  background: white;
+
+  input {
+    width: calc(100% - 130px);
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding: 0 !important;
+
+    &:focus {
+      outline-width: 0;
+    }
+  }
+
+  button {
+    //width: 64px;
+    margin-right: 5px;
+  }
+}
+
+
+.chat-header {
+  padding: 5px 15px;
+}
+
+.media-selector {
+  width: 20px;
+  float: left;
+  margin: 5px;
+}
+

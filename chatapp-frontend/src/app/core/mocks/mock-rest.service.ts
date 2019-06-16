@@ -1,0 +1,7 @@
+export class MockRestService {
+
+  constructor() {
+
+  }
+
+}
