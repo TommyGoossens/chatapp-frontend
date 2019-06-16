@@ -23,6 +23,6 @@ jobs:
           name: Build and push Docker image
           command: |
             echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin
-            docker image build - t tommygoossens/chatapp-frontend:latest
+            docker image build -t tommygoossens/chatapp-frontend:latest
             docker push tommygoossens/chatapp-frontend:latest
 #            mvn clean compile com.google.cloud.tools:jib-maven-plugin:0.9.7:build -Dimage=tommygoossens/chatapp-frontend:latest
