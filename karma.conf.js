@@ -4,7 +4,7 @@
 module.exports = function (config) {
   config.set({
     autoWatch: true,
-    basePath: "",
+    basePath: "src",
     browsers: ["PhantomJS", "Chrome"],
     customLaunchers: {
       ChromeNoSandbox: {

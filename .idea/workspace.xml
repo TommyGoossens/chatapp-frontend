@@ -2,92 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9997797b-bcc0-4e70-a10b-c3ea6094c2a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/chat/chat.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/chat/chat.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/lobby/lobby.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/ChatMessage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/SelectedSessionDTO.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-edit-details/dialog-edit-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-edit-details/dialog-edit-details.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/chat-wrapper/chat/models/reply-message/reply-message.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/chat-wrapper/chat/models/reply-message/reply-message.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/Chatroom.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/chat-wrapper/chat/models/reply-message/reply-message.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/reply-message/reply-message.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/chat-wrapper/chat/models/reply-message/reply-message.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/reply-message/reply-message.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/alert/alert.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/alert-module/alert.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/alert/alert.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/alert-module/alert.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/alert/alert.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/alert-module/alert.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/alert/alert.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/alert-module/alert.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/chat.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/chat.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/chat/chat.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/chat.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/chat/chat.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/chat.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/Chat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/Chat.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/ChatMessage.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/GroupChat.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/ReplyMessage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/ReplyMessage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/chat-message/chat-message.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/chat-message/chat-message.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/chat-message/chat-message.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/chat-message/chat-message.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/chat-message/chat-message.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/chat-message/chat-message.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/chat-message/chat-message.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/chat-message/chat-message.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/reply-message/reply-message.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/reply-message/reply-message.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/reply-message/reply-message.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/reply-message/reply-message.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/reply-message/reply-message.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/models/reply-message/reply-message.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/lobby/lobby.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/lobby/lobby.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/lobby/lobby.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/lobby/lobby.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/lobby/lobby.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/lobby/lobby.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/lobby/lobby.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/wrapper/chat-wrapper.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/wrapper/chat-wrapper.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/wrapper/chat-wrapper.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/wrapper/chat-wrapper.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/wrapper/chat-wrapper.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/wrapper/chat-wrapper.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/wrapper/chat-wrapper.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/wrapper/chat-wrapper.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/login/login.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/login/login.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-module/models/UserProfile.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/friends/friends.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/friends/friends.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/friends/friends.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/friends/friends.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/profile/profile.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/profile/profile.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/wrapper/profile-wrapper.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/wrapper/profile-wrapper.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-edit-details/EditProfileDTO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/wrapper/profile-wrapper.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/wrapper/profile-wrapper.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/register/register.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/register/register.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/register/register.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/guard/authguard/authguard.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/guard/authguard/authguard.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/interceptor/error.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/interceptor/error.interceptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/AuthenticationParticipant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/models/AuthenticationParticipant.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/ChatParticipant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/chat-module/models/ChatParticipant.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/RegisterParticipant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/models/RegisterParticipant.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/alert/alert.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/alert-module/service/alert.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/alert/alert.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/alert-module/service/alert.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/auth/auth.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/service/auth.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/authentication-module/service/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/chat/chat.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/chat/chat.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/lobby/lobby.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/lobby/lobby.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/profile/profile.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/profile-module/service/profile.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/profile/profile.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/profile-module/service/profile.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/rest.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/rest.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/settings/settings.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/settings/settings.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protractor-ci.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/protractor-ci.conf.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -101,54 +18,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.ts">
+        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1119">
-              <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="59" column="62" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/protractor-ci.conf.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.ts">
+        <entry file="file://$PROJECT_DIR$/karma.conf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="150">
+              <caret line="10" column="23" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="10" selection-end-column="23" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/services/rest.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,6 +100,7 @@
         <option value="$PROJECT_DIR$/frontend/src/app/services/rest.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.ts" />
+        <option value="$PROJECT_DIR$/karma.conf.js" />
       </list>
     </option>
   </component>
@@ -239,101 +129,7 @@
             <path>
               <item name="chatapp-frontend" type="b2602c69:ProjectViewProjectNode" />
               <item name="chatapp-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication-module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication-module" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="profile-module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="profile-module" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="profile-module" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="profile-module" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="dialog-add-friend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="profile-module" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="dialog-edit-details" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,7 +144,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -384,16 +180,17 @@
       <workItem from="1554209226311" duration="5221000" />
       <workItem from="1555753073511" duration="10260000" />
       <workItem from="1559547763888" duration="18764000" />
+      <workItem from="1560681036689" duration="508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34245000" />
+    <option name="totallyTimeSpent" value="34753000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2560" y="-153" width="2560" height="1440" extended-state="6" />
-    <editor active="true" />
+    <frame x="-2560" y="-153" width="2560" height="1440" extended-state="0" />
     <layout>
+      <window_info id="npm" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18629381" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -427,13 +224,11 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/src/app/app-routing.module.ts</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.ts</url>
           <line>31</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
@@ -454,193 +249,43 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
-          <caret line="200" column="76" selection-start-line="200" selection-start-column="76" selection-end-line="200" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/chat/chat.component.scss" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/chat-wrapper/lobby/lobby.component.scss" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.scss" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/styles.scss" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/friends/friends.component.html" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/friends/friends.component.ts" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/profile/profile.component.scss" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/profile/profile.component.html" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/register/register.component.scss" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.scss" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.html" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/register/register.component.html" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-wrapper/friends/friends.component.scss" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/login/login.component.ts" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/tsconfig.app.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/tsconfig.app.json" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/guard/authguard/authguard.component.ts" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/interceptors/error.interceptor.ts" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/interceptors/jwt.interceptor.ts" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/services/auth/auth.service.ts" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/login/login.component.scss" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/login/login.component.html" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/guard/authguard/authguard.guard.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/friends/friends.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/wrapper/profile-wrapper.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/models/UserProfile.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/friends/friends.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="18" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/wrapper/profile-wrapper.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="65" column="3" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="65" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/friends/friends.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/wrapper/profile-wrapper.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="27" column="7" lean-forward="true" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="97" selection-start-line="5" selection-start-column="97" selection-end-line="5" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-edit-details/DialogProfileData.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/@angular/material/dialog/typings/dialog.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="69" column="107" selection-start-line="69" selection-start-column="107" selection-end-line="69" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/@angular/material/dialog/typings/dialog-config.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/Observable.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/UserProfile.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-edit-details/EditProfileDTO.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-edit-details/dialog-edit-details.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/service/profile.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="44" column="65" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/guard/authguard/authguard.guard.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/friends/friends.component.html" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/wrapper/profile-wrapper.component.html" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/models/UserProfile.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/friends/friends.component.scss" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/wrapper/profile-wrapper.component.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/friends/friends.component.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/wrapper/profile-wrapper.component.scss" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-edit-details/DialogProfileData.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/@angular/material/dialog/typings/dialog.d.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/@angular/material/dialog/typings/dialog-config.d.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/Observable.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/UserProfile.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-edit-details/EditProfileDTO.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-edit-details/dialog-edit-details.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/service/profile.service.ts" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -648,73 +293,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile.module.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile.module.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.scss" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-edit-details/dialog-edit-details.html" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentication-module/login/login.component.html" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.html" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/rest.service.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.html" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.ts" />
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="32" column="81" lean-forward="true" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-edit-details/dialog-edit-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="18" lean-forward="true" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentication-module/login/login.component.html">
+    <entry file="file://$PROJECT_DIR$/src/test.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.ts">
+    <entry file="file://$PROJECT_DIR$/protractor-ci.conf.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1119">
-          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+        <state relative-caret-position="150">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="10" selection-end-column="23" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/profile.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="59" column="62" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/rest.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
