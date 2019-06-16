@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9997797b-bcc0-4e70-a10b-c3ea6094c2a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/protractor-ci.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/protractor-ci.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -31,7 +29,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/karma.conf.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -101,6 +99,7 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.ts" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
+        <option value="$PROJECT_DIR$/.circleci/config.yml" />
       </list>
     </option>
   </component>
@@ -148,11 +147,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialig-edit-details" />
       <recent name="$PROJECT_DIR$/frontend/src/app/components/profile-module" />
       <recent name="$PROJECT_DIR$/frontend/src/app/guard/authguard" />
       <recent name="$PROJECT_DIR$/frontend/src/app/components" />
-      <recent name="$PROJECT_DIR$/frontend/src/app/services/auth" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -180,15 +179,16 @@
       <workItem from="1554209226311" duration="5221000" />
       <workItem from="1555753073511" duration="10260000" />
       <workItem from="1559547763888" duration="18764000" />
-      <workItem from="1560681036689" duration="508000" />
+      <workItem from="1560681036689" duration="572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34753000" />
+    <option name="totallyTimeSpent" value="34817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="-153" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18629381" />
@@ -302,13 +302,6 @@
     <entry file="file://$PROJECT_DIR$/frontend/src/app/services/rest.service.ts" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.html" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile-module/profile/models/dialog-add-friend/dialog-add-friend.component.ts" />
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -322,6 +315,13 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
