@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {ProfileService} from '../../service/profile.service';
-import {AlertService} from '../../../../shared/components/alert-module/service/alert.service';
+import {AlertService} from '../../../../core/services/alert.service';
 import {UserProfile} from '../../../../models/UserProfile';
 import {MatDialog} from '@angular/material';
-import {DialogEditDetailsComponent} from './models/dialog-edit-details/dialog-edit-details.component';
+import {DialogEditDetailsComponent} from '../../models/dialog-edit-details/dialog-edit-details.component';
 import {DialogAddFriendComponent} from '../../../../shared/components/add-friend-dialog/dialog-add-friend.component';
 
 @Component({
@@ -25,10 +25,7 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.profileService.retrieveProfileDetails().subscribe(data => {
-      this.userProfile = new UserProfile(data);
-      this.friendList = data.friends;
-    });
+    this.retrieveProfile();
   }
 
 
@@ -44,11 +41,7 @@ export class ProfileComponent implements OnInit {
 
   upload() {
     this.currentFileUpload = this.selectedFiles.item(0);
-    // this.profileService.uploadProfilePicture(this.currentFileUpload).pipe(tap(() => {
-    //   this.retrieveProfilePicture();
-    // })).subscribe();
     this.userProfile.profilePictureLocation = this.profileService.uploadProfilePicture(this.currentFileUpload);
-
     this.selectedFiles = undefined;
   }
 
@@ -95,6 +88,13 @@ export class ProfileComponent implements OnInit {
       if (response) {
         this.addFriend(response);
       }
+    });
+  }
+
+  private retrieveProfile() {
+    this.profileService.retrieveProfileDetails().subscribe(data => {
+      this.userProfile = new UserProfile(data);
+      this.friendList = data.friends;
     });
   }
 }

@@ -39,7 +39,8 @@ export class RegisterComponent implements OnInit {
     return this.registerParticipant.email !== ''
       && this.registerParticipant.password !== ''
       && this.registerParticipant.firstname !== ''
-      && this.registerParticipant.lastname !== '';
+      && this.registerParticipant.lastname !== ''
+      && this.registerParticipant.password.length > 5;
   }
 }
 

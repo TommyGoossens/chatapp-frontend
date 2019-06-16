@@ -6,18 +6,18 @@
         <p>
           <mat-form-field class="example-full-width">
             <input matInput placeholder="E-mail address" [(ngModel)]="authy.email"
-                   [ngModelOptions]="{standalone:true}">
+                   [ngModelOptions]="{standalone:true}" id="email">
           </mat-form-field>
         </p>
         <p>
           <mat-form-field class="example-full-width">
             <input type="password" matInput maxlength="256" placeholder="Password" [(ngModel)]="authy.password"
-                   [ngModelOptions]="{standalone:true}">
+                   [ngModelOptions]="{standalone:true}" id="password">
           </mat-form-field>
 
         </p>
         <button mat-raised-button class="btn-primary text-center float-right w-25" (click)="submitLogin()"
-                [disabled]="!allFieldsFilled()">Sign in
+                [disabled]="!allFieldsFilled()" id="submitSignIn">Sign in
         </button>
         <button mat-raised-button class="btn-primary text-center w-25" routerLink="/auth/register">Register</button>
       </mat-card>

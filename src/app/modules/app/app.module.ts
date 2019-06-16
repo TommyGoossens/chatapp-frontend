@@ -15,7 +15,6 @@ import {AlertModule} from '../../shared/components/alert-module/alert.module';
 import {ProfileModule} from '../profile/profile.module';
 import {DialogAddFriendComponent} from '../../shared/components/add-friend-dialog/dialog-add-friend.component';
 import {FormsModule} from '@angular/forms';
-// import {AdminStatusPipe} from './components/chat-module/pipes/admin-status-pipe.pipe';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFirestore} from '@angular/fire/firestore';
 import {AppMaterialModule} from '../../../assets/material/app-material.module';

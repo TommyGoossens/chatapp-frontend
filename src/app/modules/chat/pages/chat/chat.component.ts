@@ -11,7 +11,7 @@ import {Chatroom} from '../../models/Chatroom';
 import {ChatMessageDTO} from '../../models/dto/ChatMessageDTO';
 import {ChatMessage} from '../../models/ChatMessage';
 import {RestService} from '../../../../core/services/rest.service';
-import {AlertService} from '../../../../shared/components/alert-module/service/alert.service';
+import {AlertService} from '../../../../core/services/alert.service';
 import {ChatEventEmitterService} from '../../service/chat-event-emitter.service';
 import {DialogChatInformationComponent} from '../../components/dialog-chat-information/dialog-chat-information.component';
 
@@ -153,9 +153,11 @@ export class ChatComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(savedRoom => {
-      this.restService.put('lobby/updateroom', savedRoom).subscribe((data: Chatroom) => {
-        this.currentChat = data;
-      });
+      if (savedRoom) {
+        this.restService.put('lobby/updateroom', savedRoom).subscribe((data: Chatroom) => {
+          this.currentChat = data;
+        });
+      }
     });
   }
 }

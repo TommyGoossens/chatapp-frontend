@@ -14,8 +14,8 @@ jobs:
           paths:
             - "node_modules"
 
-      #            - run: xvfb-run -a npm run test -- --single-run --no-progress --browser=ChromeNoSandbox
-      #      - run: xvfb-run -a npm run e2e -- --no-progress --config=protractor-ci.conf.js
+      - run: xvfb-run -a npm run test --single-run --no-progress --browser=ChromeHeadless
+      - run: xvfb-run -a npm run e2e --no-progress --config=protractor-ci.conf.js
 
       - setup_remote_docker:
           docker_layer_caching: true

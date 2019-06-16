@@ -10,13 +10,13 @@
               <td>
                 <mat-form-field class="example-full-width">
                   <input matInput placeholder="First name" [(ngModel)]="registerParticipant.firstname"
-                         [ngModelOptions]="{standalone:true}">
+                         [ngModelOptions]="{standalone:true}" id="firstName">
                 </mat-form-field>
               </td>
               <td>
                 <mat-form-field class="example-full-width">
                   <input matInput placeholder="Last name" [(ngModel)]="registerParticipant.lastname"
-                         [ngModelOptions]="{standalone:true}">
+                         [ngModelOptions]="{standalone:true}" id="lastName">
                 </mat-form-field>
               </td>
             </tr>
@@ -24,18 +24,20 @@
           <p>
             <mat-form-field class="example-full-width">
               <input matInput placeholder="E-mail address" [(ngModel)]="registerParticipant.email"
-                     [ngModelOptions]="{standalone:true}">
+                     [ngModelOptions]="{standalone:true}" id="email">
             </mat-form-field>
           </p>
           <p>
             <mat-form-field class="example-full-width">
-              <input matInput #password maxlength="256" placeholder="Password"
-                     [(ngModel)]="registerParticipant.password" [ngModelOptions]="{standalone:true}">
+              <input matInput type="password" #password maxlength="256" placeholder="Password (6 - 255 characters)"
+                     [(ngModel)]="registerParticipant.password" [ngModelOptions]="{standalone:true}" id="password"
+                     required>
               <mat-hint align="end">{{password.value.length}} / 256</mat-hint>
             </mat-form-field>
           </p>
           <button mat-raised-button class="btn-primary text-center w-25" routerLink="/auth/login">Cancel</button>
-          <button mat-raised-button class="btn-primary text-center float-right w-25" (click)="submitRegister()"
+          <button mat-raised-button class="btn-primary text-center float-right w-25" id="submitRegister"
+                  (click)="submitRegister()"
                   [disabled]="!allFieldsFilled()">Register
           </button>
         </form>

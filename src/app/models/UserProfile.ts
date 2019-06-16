@@ -1,4 +1,4 @@
-import {EditProfileDTO} from '../modules/profile/pages/profile/models/dialog-edit-details/EditProfileDTO';
+import {EditProfileDTO} from '../modules/profile/models/dialog-edit-details/EditProfileDTO';
 
 export class UserProfile {
   firstName: string;

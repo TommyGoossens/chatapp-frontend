@@ -1,10 +1,10 @@
 <div class="d-flex tab-wrapper">
-  <div class="col-lg-9 p-0 m-0">
+  <div class="col-lg-9 p-0 m-0 h-100">
     <mat-card class="col-lg-10 offset-lg-1 profile-container">
-      <div class="row h-auto">
+      <div class="row h-100">
         <div class="col-5 offset-1 profile-picture-container" *ngIf="userProfile">
-          <img src="{{userProfile.profilePictureLocation}}" alt="{{userProfile.profilePictureLocation}}"
-               style="max-width: 100%; max-height: 300px"/>
+          <div class="profilepic" [ngStyle]="{'background-image':'url('+userProfile.profilePictureLocation +')'}">
+          </div>
           <label class="btn btn-default">
             <input type="file" (change)="selectFile($event)">
           </label>
@@ -33,13 +33,6 @@
         </div>
       </div>
     </mat-card>
-
-    <mat-card class="col-lg-10 offset-lg-1  profile-status-container">
-      <div class="col-10 offset-lg-1">
-        <p>profile status</p>
-      </div>
-    </mat-card>
-
   </div>
   <div class="col-lg-3 p-0 m-0">
     <mat-toolbar color="primary">
@@ -48,14 +41,12 @@
     </mat-toolbar>
 
     <mat-list class="profile-friends p-0">
-      <cdk-virtual-scroll-viewport itemSize="5">
-        <ng-container *cdkVirtualFor="let friend of friendList">
-          <mat-list-item (click)="selectedFriend = friend.email">
-            {{friend.email}}
-            <mat-divider></mat-divider>
-          </mat-list-item>
-        </ng-container>
-      </cdk-virtual-scroll-viewport>
+      <ng-container *ngFor="let friend of friendList">
+        <mat-list-item (click)="selectedFriend = friend.email">
+          {{friend.email}}
+          <mat-divider></mat-divider>
+        </mat-list-item>
+      </ng-container>
     </mat-list>
     <div class="add-friend">
       <button mat-raised-button (click)="showAddFriendDialog()">Add friend</button>

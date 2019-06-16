@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {RestService} from '../../../../core/services/rest.service';
-import {AlertService} from '../../../../shared/components/alert-module/service/alert.service';
+import {AlertService} from '../../../../core/services/alert.service';
 import * as Stomp from 'stompjs';
 import * as SockJS from 'sockjs-client';
 import {map, tap} from 'rxjs/operators';

@@ -53,6 +53,9 @@ export class DialogChatInformationComponent implements OnInit {
   }
 
   updateAdminStatus(email: string) {
+    if (!this.isUserAdmin()) {
+      return
+    }
     const index = this.newChatRoomDetails.admins.indexOf(email);
     switch (index) {
       case -1:
@@ -80,5 +83,11 @@ export class DialogChatInformationComponent implements OnInit {
 
   save() {
     this.dialogRef.close(this.newChatRoomDetails);
+  }
+
+  isUserAdmin() {
+    return this.currentChatRoom.admins.includes(AuthService.getAuthenticatedUser())
+
+
   }
 }

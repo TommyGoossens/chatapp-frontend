@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {RestService} from '../../../core/services/rest.service';
 import {Observable} from 'rxjs';
-import {EditProfileDTO} from '../pages/profile/models/dialog-edit-details/EditProfileDTO';
+import {EditProfileDTO} from '../models/dialog-edit-details/EditProfileDTO';
 import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';

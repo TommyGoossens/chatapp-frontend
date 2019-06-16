@@ -5,13 +5,7 @@ module.exports = function (config) {
   config.set({
     autoWatch: true,
     basePath: "src",
-    browsers: ["PhantomJS", "Chrome"],
-    customLaunchers: {
-      ChromeNoSandbox: {
-        base: 'Chrome',
-        flags: ['--no-sandbox']
-      }
-    },
+    browsers: ["ChromeHeadless"],
     client: {
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
     },
@@ -25,8 +19,8 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     plugins: [
       require("karma-jasmine"),
-      // require('karma-chrome-launcher'),
-      require("karma-phantomjs-launcher"),
+      require('karma-chrome-launcher'),
+      // require("karma-phantomjs-launcher"),
       require("karma-jasmine-html-reporter"),
       require("karma-coverage-istanbul-reporter"),
       require("@angular-devkit/build-angular/plugins/karma"),
@@ -39,3 +33,20 @@ module.exports = function (config) {
     singleRun: true,
   });
 };
+
+//
+// module.exports = function (config) {
+//   config.set({
+//     frameworks: ['mocha', 'chai'],
+//     basePath: "src",
+//     files: ['*.spec.ts'],
+//     reporters: ['progress'],
+//     port: 9876,  // karma web server port
+//     colors: true,
+//     logLevel: config.LOG_INFO,
+//     browsers: ['ChromeHeadless'],
+//     autoWatch: false,
+//     // singleRun: false, // Karma captures browsers, runs the tests and exits
+//     concurrency: Infinity
+//   })
+// }

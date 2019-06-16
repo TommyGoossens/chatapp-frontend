@@ -3,7 +3,7 @@ import {AuthService} from '../../../../core/authentication/auth.service';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
 import {AuthenticationParticipant} from '../../models/AuthenticationParticipant';
-import {AlertService} from '../../../../shared/components/alert-module/service/alert.service';
+import {AlertService} from '../../../../core/services/alert.service';
 import {tap} from 'rxjs/operators';
 
 @Component({

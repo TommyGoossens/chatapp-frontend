@@ -36,7 +36,8 @@
           <td>{{participant.firstName + ' ' + participant.lastName}}</td>
           <td>
             <mat-checkbox [checked]='participant.email | adminStatus:currentChatRoom.admins'
-                          (click)="updateAdminStatus(participant.email)"></mat-checkbox>
+                          (click)="updateAdminStatus(participant.email)"
+                          [disabled]="!isUserAdmin()"></mat-checkbox>
           </td>
         </tr>
 
